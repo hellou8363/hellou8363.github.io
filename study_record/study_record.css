@@ -1,0 +1,18 @@
+@import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
+
+
+/* git gist size */
+.gist_size_half {
+  width: 50%;
+}
+
+/* text highlight */
+.blue_highlight {
+  font-weight: 600;
+  color: #0794c4;
+}
+
+.red_highlight {
+  font-weight: 600;
+  color: rgb(255, 72, 72);
+}

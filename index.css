@@ -1,4 +1,44 @@
 body {
-  margin: 20px;
-  font-weight: 700;
+  width: 1800px;
+  height: 100%;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* header */
+header {
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+}
+
+header nav ul {
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* profile_img */
+.profile_size {
+  width: 200px;
+  height: 200px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+/* main */
+#main {
+  width: 1000px;
+  height: 100%;
+  padding: 50px;
+  display: inline-block;
 }

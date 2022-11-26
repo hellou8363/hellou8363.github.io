@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="../study_record.css" />
+    <title>Java_Generic</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <div id="profile_img">
+        <img
+          class="profile_size circle"
+          src="../../img/bg_yellow.png"
+          alt="프로필이미지"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Kotlin</li>
+          <li>SQL</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Main Content Start -->
+    <div id="main">
+      <h1>제네릭(Generic)</h1>
+      <p>
+        Generic(제네릭)이란,
+        <span class="blue_highlight">결정되지 않은 타입을 파라미터로 처리하고 실제 사용할 때 파라미터를
+          구체적인 타입으로 대체시키는 기능</span>
+        <script src="https://gist.github.com/hellou8363/dc19d691292e485d79148dc1afdaba72.js"></script>
+        <span class="blue_highlight">&lt;T&gt;는</span> T가
+        <span class="blue_highlight">타입 파라미터</span>임을 뜻하는 기호로,
+        타입이 필요한 자리에 T를 사용할 수 있음을 알려주는 역할을 한다.<br />
+        여기에서 Box 클래스는 T를 content 필드의 타입으로 사용하였다.<br />
+        즉, Box
+        <span class="blue_highlight">클래스는 T가 무엇인지 모르지만</span>, Box
+        <span class="blue_highlight"
+          >객체가 생성될 시점에 다른 타입으로 대체된다는 것을 알고 있다.</span
+        >
+      </p>
+      <br />
+      <script src="https://gist.github.com/hellou8363/6f71e4f6fc71020cb5fdd0a2de533117.js"></script>
+      <p>
+        &lt;T&gt;에서 타입 파라미터로 쓰이는 T는 단지 이름일 뿐, A~Z까지 어떤
+        알파벳을 사용해도 상관없다.<br />
+        주의할 점은
+        <span class="blue_highlight"
+          >타입 파라미터를 대체하는 타입은 클래스 및 인터페이스</span
+        >라는 것이다.<br />
+
+        <span class="red_highlight"
+          >기본 타입은 타입 파라미터의 대체 타입이 될 수 없다.</span
+        >
+      </p>
+      <p>
+        변수를 선언할 때와
+        <span class="blue_highlight"
+          >동일한 타입으로 호출하고 싶다면 생성자 호출 시 생성자에는 타입을
+          명시하지 않고 &lt;&gt;만</span
+        >
+        붙일 수 있다.
+        <script src="https://gist.github.com/hellou8363/8cb125031b06f4dca7fa8709258f36d6.js"></script>
+        <script src="https://gist.github.com/hellou8363/8ac8ddfe1724828a4c4fac867a82410b.js"></script>
+      </p>
+      <h2>제네릭 타입(Generic Type)</h2>
+      <p>
+        제네릭 타입은 결정되지 않은 타입을 파라미터로 가지는 클래스와
+        인터페이스를 말한다.<br />
+        제네릭 타입은 선언부에 &lt;&gt; 부호가 붙고 그 사이에 타입 파라미터들이
+        위치한다.
+        <script src="https://gist.github.com/hellou8363/e3096ab290e800d4c1d11cca0de55b43.js"></script>
+        타입 파라미터는 변수명과 동일한 규칙에 따라 작성할 수 있지만 일반적으로
+        대문자 알파벳 한 글자로 표현한다.<br />
+        외부에서 제네릭 타입을 사용하려면 타입 파라미터에 구체적인 타입을
+        지정해야 한다.<br />
+        만약 지정하지 않으면 Object 타입이 암묵적으로 사용된다.
+      </p>
+      <b>다양한 종류와 모델 제품을 저장하기 위한 Product 예제</b>
+      <script src="https://gist.github.com/hellou8363/19164cc57cbf75671d7595c470f8538c.js"></script>
+      <script src="https://gist.github.com/hellou8363/ca4f4250ce8542187d89c4019ef7e95a.js"></script>
+      <script
+        script
+        src="https://gist.github.com/hellou8363/4a7977c61aa5bfe558dd90b607bbffe3.js"
+      ></script>
+      <b
+        >Product 제네릭 타입을 이용해서 TV와 Car를 저장하고 얻는 방법을 보여주는
+        예제</b
+      >
+      <script src="https://gist.github.com/hellou8363/6fc28309ce58699a293e3e4d034e5986.js"></script>
+      <b
+        >Rentable 인터페이스를 제네릭 타입으로 선언하고 다양한 대상을 렌트하기
+        위해<br />
+        rent() 메소드의 리턴 타입을 타입 파라미터로 선언하는 예제
+      </b>
+      <script src="https://gist.github.com/hellou8363/f2de21d91f15cba547d7048feef508c6.js"></script>
+    </div>
+    <!-- Footer Start -->
+    <footer></footer>
+    <!-- Footer End -->
+  </body>
+</html>
